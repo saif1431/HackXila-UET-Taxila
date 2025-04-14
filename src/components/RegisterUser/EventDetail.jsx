@@ -65,7 +65,7 @@ function EventCard({ event }) {
               <path fillRule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clipRule="evenodd"></path>
             </svg>
           </a>
-          <a href={`/events/register/${event.id}`}>
+          <a href='https://tally.so/r/nG75rO'>
             <div className="relative inline-block -mt-1">
               <div className="absolute inset-0 border-2 border-daBrown translate-x-1 translate-y-1"></div>
               <button 

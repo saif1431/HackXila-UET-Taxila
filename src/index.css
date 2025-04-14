@@ -6,6 +6,7 @@ body{
     height: 100%;
     overflow-x: hidden;
     background: linear-gradient(to left, #ffdb5864, #eccd5c);
+    
 }
 
 @font-face {
