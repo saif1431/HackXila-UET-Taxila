@@ -22,7 +22,7 @@ function Navbar() {
           <div className="flex items-center">
             <a className="text-white" href="/">
               <img 
-                className='rounded-full w-12 h-12 md:w-20 md:h-20 flex items-center justify-center' 
+                className='rounded-full w-20 h-20 flex items-center justify-center' 
                 alt="LOGO" 
                 loading="lazy" 
                 width="90" 
