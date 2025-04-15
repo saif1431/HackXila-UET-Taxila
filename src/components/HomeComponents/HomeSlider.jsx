@@ -9,14 +9,14 @@ function HomeSlider() {
   const swiperRef = useRef(null);
 
   const images = [
-    { id: 1, src: '/new/p1.jpeg', alt: 'NASCON event' },
-    { id: 2, src: '/new/p3.jpeg', alt: 'NASCON event' },
-    { id: 3, src: '/new/p6.jpeg', alt: 'NASCON event' },
-    { id: 4, src: '/new/p4.jpeg', alt: 'NASCON event' },
-    { id: 5, src: '/new/p5.jpeg', alt: 'NASCON event' },
-    { id: 6, src: '/new/p7.jpeg', alt: 'NASCON event' },
-    { id: 7, src: '/new/p8.jpeg', alt: 'NASCON event' },
-    { id: 8, src: '/new/p9.jpeg', alt: 'NASCON event' },
+    { id: 1, src: '/img1.jpg', alt: 'NASCON event' },
+    { id: 2, src: '/img2.jpg', alt: 'NASCON event' },
+    { id: 3, src: '/img3.jpg', alt: 'NASCON event' },
+    { id: 4, src: '/img17.jpg', alt: 'NASCON event' },
+    { id: 5, src: '/img16.jpg', alt: 'NASCON event' },
+    { id: 6, src: '/img6.jpg', alt: 'NASCON event' },
+    { id: 7, src: '/img7.jpg', alt: 'NASCON event' },
+    { id: 8, src: '/img16.jpg', alt: 'NASCON event' },
   ];
 
   return (
@@ -41,7 +41,7 @@ function HomeSlider() {
         className="w-full"
       >
         {images.map((image) => (
-          <SwiperSlide key={image.id} style={{ width: '212.8px' }}>
+          <SwiperSlide key={image.id} style={{ width: '212.8px'  }}>
             <div className="border border-daBrown p-1 cursor-pointer">
               <img
                 src={image.src}
@@ -49,7 +49,7 @@ function HomeSlider() {
                 loading="lazy"
                 width={300}
                 height={200}
-                className="w-full h-auto object-cover"
+                className="w-full h-32 object-cover"
                 style={{ color: 'transparent' }}
               />
             </div>
