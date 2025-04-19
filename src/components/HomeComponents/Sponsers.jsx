@@ -32,13 +32,13 @@ function Sponsers() {
 
   return (
     <div className="sponserSliderWrapper mb-0 mt-10 mx-7">
-      <h3 className="font-extrabold text-lg sm:text-3xl md:text-5xl text-daBrown text-center">
+      <h3 className="font-Zumme font-extrabold text-lg sm:text-3xl md:text-5xl text-daBrown text-center">
         WE COULDN'T HAVE DONE IT
       </h3>
-      <h3 className="mb-7 font-extrabold text-lg sm:text-3xl md:text-5xl text-daBrown text-center">
+      <h3 className=" font-Zumme mb-7 font-extrabold text-lg sm:text-3xl md:text-5xl text-daBrown text-center">
         ALONE
       </h3>
-      <p className="text-daBrown font-garamond text-center text-lg mb-10">
+      <p className="font-Poppins text-daBrown font-poppins text-center text-lg mb-10">
         We appreciate our valued sponsors for their support in making NaSCon a success. 
         Their contribution drives innovation, empowers talent, and helps us create an unforgettable experience.
       </p>

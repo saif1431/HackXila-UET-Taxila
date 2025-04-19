@@ -30,7 +30,7 @@ function Highlights() {
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto">
-        <h3 className="font-black text-3xl sm:text-4xl md:text-6xl text-daBrown mb-12 text-center">
+        <h3 className="font-Zumme text-3xl sm:text-4xl md:text-6xl text-daBrown mb-12 text-center">
           Last Year's Highlights
         </h3>
   

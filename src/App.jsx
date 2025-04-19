@@ -6,12 +6,14 @@ import Home from './pages/Home'
 import Footer from './components/Footer'
 import OurSponsors from './pages/OurSponsors'
 import RegisterUser from './pages/RegisterUser'
+import OurModules from './pages/OurModules'
 function App() {
   return (
  <Router>
   <Navbar  />
   <Routes>
     <Route path='/' element={<Home/>}/>
+    <Route path='/modules' element={<OurModules/>}/>
     <Route path='/sponsors' element={<OurSponsors/>}/>
     <Route path='/registration' element={<RegisterUser/>}/>
   </Routes>

@@ -7,13 +7,16 @@ import About from '../components/HomeComponents/About'
 import Highlights from '../components/HomeComponents/Highlights'
 import TotalEvents from '../components/HomeComponents/TotalEvents'
 import Sponsers from '../components/HomeComponents/Sponsers'
+import ModulesImages from '../components/HomeComponents/ModulesImages'
 
 function Home() {
   return (
     <div className='mt-22 '>
       <Marque/>
       <HeroText/>
-      <HomeSlider/>
+      <div class="mt-12 h-[15px] bg-daBrown w-full"></div>
+      <ModulesImages/>
+      {/* <HomeSlider/> */}
       <EventDate/>
       <div class="mt-10 h-[15px] bg-daBrown w-full"></div>
       <About/>

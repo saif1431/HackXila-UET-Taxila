@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import petal from '/petal.png';
 import logo from '/logo1.jpg';
 import { NavLink } from 'react-router-dom';
+import Button from './HomeComponents/Button';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ function Navbar() {
           <div className="flex items-center">
             <a className="text-white" href="/">
               <img 
-                className='rounded-full w-20 h-20 flex items-center justify-center' 
+                className='rounded-full w-20 India families. h-20 flex items-center justify-center' 
                 alt="LOGO" 
                 loading="lazy" 
                 width="90" 
@@ -35,7 +36,7 @@ function Navbar() {
           </div>
           
           {/* Desktop Navigation */}
-          <ul className="gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden sm:flex" data-justify="end">
+          <ul className="gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden sm:flex font-poppins font-semibold" data-justify="end">
             <li className="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold">
               <div className="flex flex-col items-center relative">
                 <NavLink className="cursor-pointer navbar-link" to='/'>Home</NavLink>
@@ -49,6 +50,11 @@ function Navbar() {
                   style={{ color: "transparent" }} 
                   src={petal}
                 />
+              </div>
+            </li>
+            <li className="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold">
+              <div className="flex flex-col items-center relative">
+                <NavLink className="cursor-pointer navbar-link" to='/modules'>Our Modules</NavLink>
               </div>
             </li>
             <li className="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold">
@@ -71,20 +77,7 @@ function Navbar() {
             <li className="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold">
               <a href="/events">
                 <span className="cursor-pointer navbar-link">
-                  <div className="relative inline-block -mt-1">
-                    <div className="absolute inset-0 border-2 border-daBrown translate-x-1 translate-y-1"></div>
-                    <NavLink to='/registration'>
-                      <button 
-                        type="button" 
-                        className="w-full relative px-4 py-1 md:px-6 md:py-2 text-sm font-garamond text-white transition-all
-                        hover:bg-red-400
-                        duration-300 border-2 border-daBrown group hover:translate-x-1 hover:translate-y-1 bg-gradient-to-tr from-poorple to-daBrown disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-x-0 disabled:hover:translate-y-0 cursor-pointer"
-                      >
-                        <span className="relative z-10 flex items-center justify-center gap-2">Register</span>
-                        <span className="absolute inset-0 w-full h-full bg-poorple -z-0 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
-                      </button>
-                    </NavLink>
-                  </div>
+              <Button marginTop = 'mt-0'/>
                 </span>
               </a>
             </li>
@@ -112,9 +105,14 @@ function Navbar() {
           <NavLink 
             className="cursor-pointer navbar-link text-lg py-2 text-black font-bold" 
             to='/' 
-            onClick={toggleMenu}
           >
             Home
+          </NavLink>
+          <NavLink 
+            className="cursor-pointer navbar-link text-lg py-2 text-black font-bold" 
+            to='/modules' 
+          >
+            Our Modules
           </NavLink>
           <a 
             className="cursor-pointer navbar-link text-lg py-2 text-black font-bold" 
@@ -139,21 +137,7 @@ function Navbar() {
           >
             Ambassadors
           </a>
-          <NavLink 
-            className="cursor-pointer navbar-link text-lg py-2" 
-            to='/registration'
-            onClick={toggleMenu}
-          >
-            <button 
-              type="button" 
-              className="relative px-6 py-2 text-sm font-garamond text-white transition-all
-              hover:bg-red-400
-              duration-300 border-2 border-daBrown group hover:translate-x-1 hover:translate-y-1 bg-gradient-to-tr from-poorple to-daBrown"
-            >
-              <span className="relative z-10 flex items-center justify-center gap-2">Register Now</span>
-              <span className="absolute inset-0 w-full h-full bg-poorple -z-0 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
-            </button>
-          </NavLink>
+      <Button/>
         </div>
       </div>
       

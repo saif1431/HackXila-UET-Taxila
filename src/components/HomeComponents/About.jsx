@@ -3,39 +3,48 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="flex flex-col md:flex-row w-full justify-center items-center gap-10 p-8 md:p-20">
-      <div className="flex flex-col w-full md:max-w-3xl">
-        <h2 className="font-black text-3xl sm:text-5xl md:text-7xl text-daBrown">ABOUT US</h2>
-        <p className="mt-3 text-lg font-garamond">
-          NaSCon is an annual tech and business extravaganza organized by FAST NUCES Islamabad. It is one of Pakistan's biggest inter-university competitions attracting participants from all over the country. It started as a small-scale technology-based competition and has now expanded into a national-level convention featuring diverse challenges in tech, business and engineering.
-        </p>
-        <p className="mt-3 mb-5 text-lg font-garamond">
-          Each year, NaSCon expands with new and exciting competitions, encouraging students to push their creative and analytical boundaries. It provides a dynamic platform for participants to showcase their skills, collaborate with like-minded individuals, and experience the thrill of competitive excellence.
-        </p>
-      </div>
-      
-      <div className="p-2 border border-daBrown">
-        {/* Next.js Image component (recommended) */}
-        {/* <Image
-          src=""
-          alt="Image related to nascon"
-          width={600}
-          height={400}
-          className="object-cover"
-          priority={false}
-        /> */}
-        
-        {/* Regular img tag alternative */}
-        {/*
-        <img 
-          src="/new/wrw.jpeg" 
-          alt="Image related to nascon" 
-          className="w-full h-auto"
-          loading="lazy"
-        />
-        */}
-      </div>
-    </div>
+      <div className="flex flex-col w-full px-16 space-y-4 mt-6">
+        <h2 className="font-Zumme text-3xl sm:text-5xl md:text-7xl text-daBrown">Why HackXila?</h2>
+ <div className='1'>
+  <h6 className='text-2xl text-daBrown font-extrabold font-Zumme'>Innovation Under Pressure</h6>
+  <p className='mt-2 text-lg font-poppins '>A dynamic platform where participants turn ideas into solutions within 4 hours, tackling surprise problem statements through  rapid prototyping and creative thinking.</p>
+ </div>
+ <div className='2'>
+  <h6 className='text-2xl text-daBrown font-extrabold font-Zumme'>Skills That Matter</h6>
+<li className='mt-2 text-lg font-poppins'><span className='text-daBrown  font-bold font-poppins '>Technical Growth:</span>        Hands-on experience in AI, prompt engineering, and problem-solving
+
+</li>
+<li className='mt-2 text-lg font-poppins'><span className='text-daBrown  font-bold font-poppins '>Collaboration:</span>        Team-based challenges (2-4 members) fostering teamwork
+
+</li>
+<li className='mt-2 text-lg font-poppins'><span className='text-daBrown  font-bold font-poppins '>Competitive Edge:</span>        Quizzes on DSA, OS, and AI (25 seconds/question) to test knowledge under pressure
+</li>
+ </div>
+ <div className='3'>
+  <h6 className='text-2xl text-daBrown font-extrabold font-Zumme'>Prove Your Talent</h6>
+<li className='mt-2 text-lg font-poppins'><span className='text-daBrown  font-bold font-poppins '>Speed Typing:</span>        Measure precision and speed (WPM-based scoring)
+
+</li>
+<li className='mt-2 text-lg font-poppins'><span className='text-daBrown  font-bold font-poppins '>Prompt Engineering:</span>        Craft AI-generated solutions in 10 minutes
+
+</li>
+<li className='mt-2 text-lg font-poppins'><span className='text-daBrown  font-bold font-poppins '>Pitch Perfect:</span>        Present ideas to judges in 7-8 minutes
+</li>
+ </div>
+ <div className='4'>
+  <h6 className='text-2xl text-daBrown font-extrabold font-Zumme'>Rewards & Recognition</h6>
+<li className='mt-2 text-lg font-poppins'><span className='text-daBrown  font-bold font-poppins '>Prize Pool:</span>        Up to PKR 15,000 for winners</li>
+<li className='mt-2 text-lg font-poppins'><span className='text-daBrown  font-bold font-poppins '>Networking:</span>       Connect with experts and peers in tech
+</li>
+</div>
+ <div className='5'>
+  <h6 className='text-2xl text-daBrown font-extrabold font-Zumme'>Inspired by Real-World Impact</h6>
+<p className=' text-lg font-poppins italic'>"This isn’t just about coding—it’s about thinking big."</p>
+<p className='mt-2 text-lg font-poppins'>HackXila bridges classroom learning with real-world applications, preparing participants for future tech challenges.</p>
+</div>
+ </div>
+
+    
   );
 }
 
