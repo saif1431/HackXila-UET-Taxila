@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-// import Image from 'next/image' // If using Next.js
-import petal from '/petal.png';
-import logo from '/logo1.jpg';
 import { NavLink } from 'react-router-dom';
 import Button from './HomeComponents/Button';
 
@@ -11,6 +8,10 @@ function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Active link style - changed text color to gray-700
+  const activeLinkClass = "text-gray-500 font-bold border-b-2 border-gray-500 transition-colors pb-1";
+  const normalLinkClass = "text-white hover:text-daBrown transition-colors";
 
   return (
     <div>
@@ -23,63 +24,89 @@ function Navbar() {
           <div className="flex items-center">
             <a className="text-white" href="/">
               <img 
-                className='rounded-full w-20 India families. h-20 flex items-center justify-center' 
+                className='rounded-full w-20 h-20 flex items-center justify-center' 
                 alt="LOGO" 
                 loading="lazy" 
                 width="90" 
                 height="90" 
                 decoding="async" 
                 style={{ color: "transparent" }} 
-                src={logo}
+                src="/logo1.jpg"
               />
             </a>
           </div>
           
           {/* Desktop Navigation */}
           <ul className="gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden sm:flex font-poppins font-semibold" data-justify="end">
-            <li className="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold">
+            <li className="whitespace-nowrap box-border list-none">
               <div className="flex flex-col items-center relative">
-                <NavLink className="cursor-pointer navbar-link" to='/'>Home</NavLink>
-                <img 
-                  alt="active link indicator" 
-                  loading="lazy" 
-                  width="15" 
-                  height="15" 
-                  decoding="async" 
-                  className="absolute -bottom-1" 
-                  style={{ color: "transparent" }} 
-                  src={petal}
-                />
+                <NavLink 
+                  className={({ isActive }) => 
+                    `cursor-pointer navbar-link ${isActive ? activeLinkClass : normalLinkClass}`
+                  } 
+                  to='/'
+                >
+                  Home
+                </NavLink>
               </div>
             </li>
-            <li className="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold">
+            <li className="whitespace-nowrap box-border list-none">
               <div className="flex flex-col items-center relative">
-                <NavLink className="cursor-pointer navbar-link" to='/modules'>Our Modules</NavLink>
+                <NavLink 
+                  className={({ isActive }) => 
+                    `cursor-pointer navbar-link ${isActive ? activeLinkClass : normalLinkClass}`
+                  } 
+                  to='/modules'
+                >
+                  Our Modules
+                </NavLink>
               </div>
             </li>
-            <li className="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold">
+            <li className="whitespace-nowrap box-border list-none">
               <div className="flex flex-col items-center relative">
-                <a target="_blank" href="https://www.canva.com/design/DAGj7xMTCbI/U2GpWtVI3aNkyP9DvHxGDA/edit?utm_content=DAGj7xMTCbI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" rel="noopener noreferrer">
-                  <span className="cursor-pointer navbar-link">Information</span>
+                <a 
+                  target="_blank" 
+                  href="https://www.canva.com/design/DAGj7xMTCbI/U2GpWtVI3aNkyP9DvHxGDA/edit?utm_content=DAGj7xMTCbI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+                  rel="noopener noreferrer"
+                  className={`cursor-pointer navbar-link ${normalLinkClass}`}
+                >
+                  Information
                 </a>
               </div>
             </li>
-            <li className="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold">
+            <li className="whitespace-nowrap box-border list-none">
               <div className="flex flex-col items-center relative">
-                <NavLink className="cursor-pointer navbar-link" to='/sponsors'>Sponsors</NavLink>
+                <NavLink 
+                  className={({ isActive }) => 
+                    `cursor-pointer navbar-link ${isActive ? activeLinkClass : normalLinkClass}`
+                  } 
+                  to='/sponsors'
+                >
+                  Sponsors
+                </NavLink>
               </div>
             </li>
-            <li className="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold">
+            <li className="whitespace-nowrap box-border list-none">
               <div className="flex flex-col items-center relative">
-                <a href="/amb-prt-tree"><span className="cursor-pointer navbar-link">Ambassadors</span></a>
+                <NavLink 
+                  className={({ isActive }) => 
+                    `cursor-pointer navbar-link ${isActive ? activeLinkClass : normalLinkClass}`
+                  } 
+                  to='/amb-prt-tree'
+                >
+                  Ambassadors
+                </NavLink>
               </div>
             </li>
-            <li className="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold">
-              <a href="/events">
-                <span className="cursor-pointer navbar-link">
-              <Button marginTop = 'mt-0'/>
-                </span>
-              </a>
+            <li className="whitespace-nowrap box-border list-none">
+              <NavLink 
+                className={({ isActive }) => 
+                  `cursor-pointer ${isActive ? activeLinkClass  : normalLinkClass}`
+                } 
+                to='/events'
+              >
+                <Button marginTop='mt-0'/>
+              </NavLink>
             </li>
           </ul>
           
@@ -100,22 +127,28 @@ function Navbar() {
       </nav>
       
       {/* Mobile Menu */}
-      <div className={`fixed top-[var(--navbar-height)] left-0 w-full bg-background/95 backdrop-blur-lg  z-30 transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'} sm:hidden`}>
+      <div className={`fixed top-[var(--navbar-height)] left-0 w-full bg-background/95 backdrop-blur-lg z-30 transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'} sm:hidden`}>
         <div className="flex flex-col items-center py-4 space-y-4">
           <NavLink 
-            className="cursor-pointer navbar-link text-lg py-2 text-black font-bold" 
+            className={({ isActive }) => 
+              `cursor-pointer navbar-link text-lg py-2 font-bold ${isActive ? activeLinkClass : normalLinkClass}`
+            } 
             to='/' 
+            onClick={toggleMenu}
           >
             Home
           </NavLink>
           <NavLink 
-            className="cursor-pointer navbar-link text-lg py-2 text-black font-bold" 
+            className={({ isActive }) => 
+              `cursor-pointer navbar-link text-lg py-2 font-bold ${isActive ? activeLinkClass : normalLinkClass}`
+            } 
             to='/modules' 
+            onClick={toggleMenu}
           >
             Our Modules
           </NavLink>
           <a 
-            className="cursor-pointer navbar-link text-lg py-2 text-black font-bold" 
+            className={`cursor-pointer navbar-link text-lg py-2 font-bold ${normalLinkClass}`} 
             target="_blank" 
             href="https://www.canva.com/design/DAGj7xMTCbI/U2GpWtVI3aNkyP9DvHxGDA/edit?utm_content=DAGj7xMTCbI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
             rel="noopener noreferrer"
@@ -124,20 +157,32 @@ function Navbar() {
             Information
           </a>
           <NavLink 
-            className="cursor-pointer navbar-link text-lg py-2 text-black font-bold" 
+            className={({ isActive }) => 
+              `cursor-pointer navbar-link text-lg py-2 font-bold ${isActive ? activeLinkClass : normalLinkClass}`
+            } 
             to='/sponsors'
             onClick={toggleMenu}
           >
             Sponsors
           </NavLink>
-          <a 
-            className="cursor-pointer navbar-link text-lg py-2 text-black font-bold" 
-            href="/amb-prt-tree"
+          <NavLink 
+            className={({ isActive }) => 
+              `cursor-pointer navbar-link text-lg py-2 font-bold ${isActive ? activeLinkClass : normalLinkClass}`
+            } 
+            to='/amb-prt-tree'
             onClick={toggleMenu}
           >
             Ambassadors
-          </a>
-      <Button/>
+          </NavLink>
+          <NavLink 
+            className={({ isActive }) => 
+              `cursor-pointer ${isActive ? 'text-gray-700 border-b-2 border-gray-500 transition-colors' : ''}`
+            } 
+            to='/events'
+            onClick={toggleMenu}
+          >
+            <Button/>
+          </NavLink>
         </div>
       </div>
       
