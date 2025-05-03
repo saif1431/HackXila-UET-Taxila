@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import OurSponsors from './pages/OurSponsors'
 import RegisterUser from './pages/RegisterUser'
 import OurModules from './pages/OurModules'
+import Ambassadors from './pages/Ambassadors'
 function App() {
   return (
  <Router>
@@ -16,6 +17,7 @@ function App() {
     <Route path='/modules' element={<OurModules/>}/>
     <Route path='/sponsors' element={<OurSponsors/>}/>
     <Route path='/registration' element={<RegisterUser/>}/>
+    <Route path='/Ambassadors' element={<Ambassadors/>}/>
   </Routes>
   <Footer/>
  </Router>

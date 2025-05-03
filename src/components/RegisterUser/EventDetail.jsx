@@ -66,7 +66,7 @@ function EventCard({ event }) {
               <path fillRule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clipRule="evenodd"></path>
             </svg>
           </a>
-          <a href='https://tally.so/r/nG75rO' className='bg-[#504b38] py-2 px-4 rounded-md hover:bg-[#504b45] hover:scale-x-75 font-poppins font-semibold'>
+          <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSd8f37_C7V_18h_P89e3SE7zdY5ljBJfPBFjzdyywM0ZTiVWQ/viewform?pli=1&fbclid=PAY2xjawJzSLpleHRuA2FlbQIxMAABp6R4CL8qOLm41FSWQbOBA1GSSD-ohhnJocLJe2BpJAeWs0XYrwV6lKO6-B4t_aem_4G4qWT71mnSKSf2Al9kVFA' className='bg-[#504b38] py-2 px-4 rounded-md hover:bg-[#504b45] hover:scale-x-75 font-poppins font-semibold'>
       Register
           </a>
         </div>

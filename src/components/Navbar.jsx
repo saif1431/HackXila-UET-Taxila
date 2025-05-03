@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <div>
       <nav 
-        className="flex py-5 z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none fixed top-0 left-0 backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70" 
+        className="flex py-5 z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none fixed top-0 left-0 backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70 " 
         style={{ "--navbar-height": "3rem" }}
       >
         <header className="z-40 flex px-4 md:px-6 gap-4 w-full flex-row relative flex-nowrap items-center justify-between h-[var(--navbar-height)] max-w-[1024px]">
@@ -37,7 +37,7 @@ function Navbar() {
           </div>
           
           {/* Desktop Navigation */}
-          <ul className="gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden sm:flex font-poppins font-semibold" data-justify="end">
+          <ul className="gap-6 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden sm:flex font-poppins font-semibold" data-justify="end">
             <li className="whitespace-nowrap box-border list-none">
               <div className="flex flex-col items-center relative">
                 <NavLink 
@@ -92,7 +92,7 @@ function Navbar() {
                   className={({ isActive }) => 
                     `cursor-pointer navbar-link ${isActive ? activeLinkClass : normalLinkClass}`
                   } 
-                  to='/amb-prt-tree'
+                  to='/Ambassadors'
                 >
                   Ambassadors
                 </NavLink>
@@ -169,7 +169,7 @@ function Navbar() {
             className={({ isActive }) => 
               `cursor-pointer navbar-link text-lg py-2 font-bold ${isActive ? activeLinkClass : normalLinkClass}`
             } 
-            to='/amb-prt-tree'
+            to='/Ambassadors'
             onClick={toggleMenu}
           >
             Ambassadors
