@@ -40,10 +40,7 @@ function EventDate() {
         </h1>
         <div className="w-full bg-gradient-to-r from-poorple to-daBrown p-4 text-white">
           <h1 className="font-poppins font-semibold dates text-4xl md:text-4xl lg:text-6xl">
-            May 06 - May 06
-          </h1>
-          <h1 className="font-poppins mt-5 font-bold dates text-4xl md:text-4xl lg:text-6xl">
-            2025
+            May 06 - 2025
           </h1>
         </div>
       </div>

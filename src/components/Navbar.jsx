@@ -82,7 +82,7 @@ function Navbar() {
                   } 
                   to='/sponsors'
                 >
-                  Sponsors
+                  Community Partners
                 </NavLink>
               </div>
             </li>

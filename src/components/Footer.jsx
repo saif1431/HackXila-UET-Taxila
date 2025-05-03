@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '/logo1.jpg';
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { BsWhatsapp } from "react-icons/bs";
+
 import { NavLink } from 'react-router-dom';
 import Button from './HomeComponents/Button';
 
@@ -34,10 +36,10 @@ function Footer() {
             Home
           </NavLink>
           <NavLink 
-            to="/events" 
+            to="/modules" 
             className={({ isActive }) => `font-poppins block mb-2 transition-colors text-daBrown ${isActive ? 'text-poorple' : 'hover:text-poorple'}`}
           >
-            Events
+            Our Modules
           </NavLink>
           <NavLink 
             to="/sponsors" 
@@ -56,9 +58,9 @@ function Footer() {
           <a href="https://goto.now/MRnDC" target="_blank" rel="noopener noreferrer" className="font-poppins block mb-2 hover:text-poorple text-daBrown">
             Information Booklet
           </a>
-          <a href="https://docs.google.com/forms/d/1T0Y4bd208SJMlXQuDciC0ul3Ty4BT3sAxhBSHM_VZV4/edit" target="_blank" rel="noopener noreferrer" className="font-poppins block mb-2 hover:text-poorple text-daBrown">
+          <NavLink to='/Ambassadors' className="font-poppins block mb-2 hover:text-poorple text-daBrown">
             Ambassador
-          </a>
+          </NavLink>
         </div>
 
         {/* Column 4 - Sponsor */}
@@ -73,7 +75,7 @@ function Footer() {
           
           <div className="socials flex gap-6">
             <a href="https://chat.whatsapp.com/CcIoRmezCzA2eGy6y6o3hZ" target="_blank" rel="noopener noreferrer" className="text-white hover:text-daBrown transition-colors">
-              <FaFacebook size={20} />
+              <BsWhatsapp size={20} />
             </a>
             <a href="https://www.instagram.com/hackxila/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-daBrown transition-colors">
               <FaInstagram size={20} />

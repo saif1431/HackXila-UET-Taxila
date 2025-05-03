@@ -33,7 +33,7 @@ function Sponsors() {
         ALONE
       </h3>
       <p className="font-Poppins text-daBrown text-center text-lg mb-10">
-        We appreciate our valued sponsors for their support in making NaSCon a success. 
+        We appreciate our valued sponsors for their support in making Hackxila a success. 
         Their contribution drives innovation, empowers talent, and helps us create an unforgettable experience.
       </p>
       
