@@ -163,7 +163,7 @@ function Navbar() {
             to='/sponsors'
             onClick={toggleMenu}
           >
-            Sponsors
+            Community Partners
           </NavLink>
           <NavLink 
             className={({ isActive }) => 
