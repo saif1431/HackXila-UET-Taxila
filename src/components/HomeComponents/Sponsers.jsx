@@ -14,7 +14,13 @@ function Sponsors() {
     { id: 9, name: 'GDC', logo: '/PartnersLogos/GDC.png' },
     { id: 10, name: 'Hirobotec', logo: '/PartnersLogos/hirobotec.png' },
     { id: 11, name: 'Comptech', logo: '/PartnersLogos/comptech.png' },
-    { id: 11, name: 'Ai & RD', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnMyw_95a9m4z5c-4D3bcehHg2GHBrVCU8WQ&s' },
+    { id: 12, name: 'Ai & RD', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnMyw_95a9m4z5c-4D3bcehHg2GHBrVCU8WQ&s' },
+    { id: 13, name: 'MEDIACLUB', logo: '/PartnersLogos/MEDIACLUB.jpg' },
+    { id: 14, name: 'Devquest', logo: '/PartnersLogos/Devquest.jpg' },
+    { id: 15, name: 'IEEE', logo: '/PartnersLogos/IEEE.jpg' },
+    { id: 16, name: 'NUTECH', logo: '/PartnersLogos/NUTECH.jpg' },
+    { id: 17, name: 'XNEWS', logo: '/PartnersLogos/XNEWS.jpg' },
+    { id: 18, name: 'WIE', logo: '/PartnersLogos/WIE.jpg' },
   ];
 
   // For infinite scrolling effect, duplicate the array once

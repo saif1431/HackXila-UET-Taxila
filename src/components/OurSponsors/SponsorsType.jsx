@@ -9,11 +9,17 @@ function SponsorsType() {
       "/PartnersLogos/comptech.png",
       "/PartnersLogos/Softdesk.png",
       "/PartnersLogos/step.png",
+      "/PartnersLogos/WIE.jpg",
+      "/PartnersLogos/XNEWS.jpg",
+      "/PartnersLogos/MEDIACLUB.jpg",
     ],
     gold: [
       "/PartnersLogos/GDC.png",
       "/PartnersLogos/CSS.png",
-      "/PartnersLogos/logo2.png"
+      "/PartnersLogos/logo2.png",
+      "/PartnersLogos/IEEE.jpg",
+      "/PartnersLogos/NUTECH.jpg",
+      "/PartnersLogos/Devquest.jpg",
     ],
     silver: [
       "/PartnersLogos/acmcui.png",
